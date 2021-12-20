@@ -58,3 +58,7 @@ input{width:75px; font-size: smaller;}
     display: inline-block;
     width: 250px;
 }
+
+.highlight {
+    background-color: yellow;
+  }

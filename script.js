@@ -11,8 +11,10 @@ function compute() {
     //validating principal
     if (principal == "" || isNaN(principal)) {
         alert("Please insert a valid numeric value");
+        document.getElementById("principal").focus();
     }else if (principal <= 0) {
         alert("Enter a positive number");
+        document.getElementById("principal").focus();
     } else {
 
         //calculating result
@@ -20,10 +22,11 @@ function compute() {
         var year = new Date().getFullYear() + parseInt(years);
 
         //assign result
-        document.getElementById("result").innerHTML = "If you deposit "
-            + principal + ",\<br\>at an interest rate of "
-            + rate + "%.\<br\>You will receive an amount of " +
-            interest + ",\<br\>in the year " + year + "\<br\>";
+        document.getElementById("result").innerHTML = "If you deposit <span class='highlight'>"
+            + principal + "</span>,\<br\>at an interest rate of <span class='highlight'>"
+            + rate + "%</span>.\<br\>You will receive an amount of <span class='highlight'>" +
+            interest + "</span>,\<br\>in the year <span class='highlight'>" + year + "</span>\<br\>";
+
     }
 }
 
