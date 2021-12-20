@@ -1,4 +1,60 @@
-body {background-color:tan;}
-h1{color:green;}
+/* for body css */
+body {background-color:black;font-family:arial;color:white;}
+/* for  title */
+h1{color:grey;font-family:verdana;font-size: 20px;font-weight: bolder;}
+
+/* for  footer */
+footer{font-weight: bold;}
+
+/*input width*/
+input{width:75px; font-size: smaller;}
+
+/* for  main div class */
+.maindiv {
+    background-color:white;
+    color:black;
+    width:300px;
+    padding:20px;
+    border-radius:25px;
+    align-items:center;
+    font-weight: bold;
+    font-size: smaller;
+}
+
+/* for button inside the tableh */
+.tableh table tr td button{
+   width: 100px;
+   font-size: 10px;
+   padding: 2px;
+   margin: 0px;
+   font-weight: bold;
+}
+
+.spanrate{ 
+    width: 20px;
+    display: inline-block;
+}
+
+/*cell width*/
+.tableh table tr td{
+    width: 110px;
+}
+
+/* for table margin */
+.tableh {
+  margin:5px;
+  margin-left: 40px;
+  margin-right: 20px;
+
+}
+
+/*width of result*/
+.lastrow{
+    width: 100%;
+}
 
 
+.resultclass{
+    display: inline-block;
+    width: 250px;
+}
